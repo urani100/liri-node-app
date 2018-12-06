@@ -8,7 +8,7 @@ var keys = require('./keys.js');
 
 //global variable
 var spotify = new Spotify(keys.spotify);
-var order = process.argv[2];
+var request = process.argv[2];
 var input = process.argv[3]; // add quotes
 
 
@@ -67,7 +67,10 @@ var concert = function(){
 }
 
 //movie function
-var movie = function(){       
+var movie = function(){ 
+
+    //If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+
     axios.get(`https://www.omdbapi.com/?t=${input}&y=&plot=short&apikey=trilogy`).then(
     function(response) {
         console.log
@@ -103,19 +106,42 @@ var movie = function(){
     );
 }
 
+//function executeText
+
+var executeText = function(){
+    var dictate = fs.writeFile('random.txt', input, function(err){
+        if(err){
+            console.log('error has occured')
+        }else{
+            console.log('file has been updated');
+        }
+    });
+
+    var readFile = fs.readFile('random.txt','utf8', function(err, data){
+        if(err){
+            console.log('error has occured');
+        }else{
+            console.log(data);
+        }
+
+    })
+}
 /////////////////////////////////////////////////////////
 
 //place in app.js
 
-if(order ==='spotify-this-song'){
+if(request ==='spotify-this-song'){
     song();
-}else if(order ==='concert-this'){
+}else if(request ==='concert-this'){
     concert();
-}else if(order ==='do-what-it-says'){
+}else if(request ==='movie-this'){
     movie();
+}else if(request ==='do-what-it-says'){
+    executeText();
 }
 else{
-     console.log('I do not unsdertand your request. Please try again');
+     console.log('I do not understand your request. Please try again');
+    
 }
 
-
+//node liri.js do-what-it-says "spotify-this-song 'I Want it That Way' "
