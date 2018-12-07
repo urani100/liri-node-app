@@ -4,12 +4,15 @@ require('dotenv').config();
 var axios = require("axios");
 var Spotify = require('node-spotify-api');
 var fs = require('fs');
+var exec = require('child_process').exec, child;
 var keys = require('./keys.js');
 
-//global variable
+
+//global variables
 var spotify = new Spotify(keys.spotify);
 var request = process.argv[2];
-var input = process.argv[3]; // add quotes
+var input = `"${process.argv[3]}"`; // add quotes
+
 
 
 
@@ -22,7 +25,7 @@ var song = function(){
         // console.log(response.tracks);
          console.log
          (
-              "Artist(s): " + response.tracks.items[0].artists[0].name+
+              "\nArtist(s): " + response.tracks.items[0].artists[0].name+
               "\nThe song's name: " + response.tracks.items[1].name +
               "\nSpotify Link:" + response.tracks.items[0].artists[0].external_urls.spotify + 
               "\nAlbum: " + response.tracks.items[0].name
@@ -40,7 +43,7 @@ var concert = function(){
     function(response) {
         console.log
             (
-            'Location: ' + response.data[0].venue.city + ', ' + response.data[0].venue.country +
+            '\nLocation: ' + response.data[0].venue.city + ', ' + response.data[0].venue.country +
             '\nVenue: ' + response.data[0].venue.name + 
             '\nConcert Date: ' +response.data[0].datetime
             );
@@ -75,7 +78,7 @@ var movie = function(){
     function(response) {
         console.log
             (
-            'Title: ' + response.data.Title+ 
+            '\nTitle: ' + response.data.Title+ 
             '\nYear: ' + response.data.Year+
             '\nIMDB Rating: ' + response.data.Ratings[0].Value+
             '\nRotten Tomatoes Rating: ' + response.data.Ratings[1].Value+
@@ -109,26 +112,33 @@ var movie = function(){
 //function executeText
 
 var executeText = function(){
-    var dictate = fs.writeFile('random.txt', input, function(err){
+   fs.readFile('random.txt', 'utf8', function(err, data){
+        if(err){
+            console.log(err) 
+        }
+        child = exec( `node liri.js spotify-this-song  ${data}`,function (error, stdout, stderr) {
+         console.log('\n' + stdout);
+         console.log(stderr);
+         if (error !== null) {
+             console.log('exec error: ' + error);
+            } 
+        });
+    })
+}
+
+var updateText = function(){
+    var dictate = fs.writeFile('random.txt', `"${input}"`, function(err){
         if(err){
             console.log('error has occured')
         }else{
             console.log('file has been updated');
+            console.log(process.argv)
         }
     });
-
-    var readFile = fs.readFile('random.txt','utf8', function(err, data){
-        if(err){
-            console.log('error has occured');
-        }else{
-            console.log(data);
-        }
-
-    })
 }
+
 /////////////////////////////////////////////////////////
 
-//place in app.js
 
 if(request ==='spotify-this-song'){
     song();
@@ -138,10 +148,11 @@ if(request ==='spotify-this-song'){
     movie();
 }else if(request ==='do-what-it-says'){
     executeText();
+}else if(request ==='updateText'){
+    updateText();
 }
 else{
-     console.log('I do not understand your request. Please try again');
-    
+    console.log('Your Request is not Valid. Please Try Again');    
 }
 
 //node liri.js do-what-it-says "spotify-this-song 'I Want it That Way' "
