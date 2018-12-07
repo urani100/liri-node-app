@@ -1,0 +1,25 @@
+
+node liri.js concert-this rita ora
+
+node liri.js spotify-this-song la isla bonita
+node liri.js spotify-this-song 
+
+
+node liri.js movie-this the princess bride
+node liri.js movie-this 
+
+
+node liri.js updateText I Want it That Way
+node liri.js do-what-it-says
+
+node liri.js updateText Glory Box
+node liri.js do-what-it-says
+
+
+*** var command ='concert-this' line 154;
+node liri.js updateText drake
+node liri.js do-what-it-says
+
+** */var command = 'movie-this' line 155;
+node liri.js updateText the matrix
+node liri.js do-what-it-says

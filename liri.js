@@ -112,7 +112,6 @@ var movie = function(){
    
     axios.get(link).then(
     function(response) {
-        console.log(response.data);
             output=
             '\n' + timeStamp + '\n' + 
             '\nOMB Response for: ' + input + 
@@ -151,11 +150,15 @@ var movie = function(){
 
 //executeText function 
 var executeText = function(){
+// var command = 'spotify-this-song';
+// var command ='concert-this';
+var command = 'movie-this';
+
    fs.readFile('random.txt', 'utf8', function(err, data){
         if(err){
             console.log(err) 
         }
-        child = exec( `node liri.js spotify-this-song  ${data}`,function (error, stdout, stderr) {
+        child = exec( `node liri.js ${command} ${data}`,function (error, stdout, stderr) {
          console.log(stdout);
          console.log(stderr);
          if (error !== null) {
@@ -171,7 +174,7 @@ var updateText = function(){
         if(err){
             console.log('error has occured')
         }else{
-            console.log('file has been updated');
+            console.log('random.txt has been updated');
         }
     });
 }
@@ -189,9 +192,7 @@ var logData = function(output){
 }
 
 
-/////////////////////////////////////////////////////////
-
-
+// command logic
 if(command ==='spotify-this-song'){
     if(input){
          song();
@@ -211,22 +212,3 @@ else{
     console.log('Your Command is not Valid. Please Try Again');    
 }
 
-
-//node liri.js concert-this rita ora
-//node liri.js concert-this 
-//node liri.js concert-this portish head 
-
-
-// node liri.js spotify-this-song la isla bonita
-//node liri.js spotify-this-song 
-
-
-// node liri.js movie-this the princess bride
-//node liri.js movie-this 
-
-
-//node liri.js updateText I Want it That Way
-//node liri.js do-what-it-says
-
-//node liri.js updateText Glory Box
-//node liri.js do-what-it-says
