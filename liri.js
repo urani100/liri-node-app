@@ -112,6 +112,10 @@ var movie = function(){
    
     axios.get(link).then(
     function(response) {
+<<<<<<< HEAD
+=======
+        console.log(response.data);
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
             output=
             '\n' + timeStamp + '\n' + 
             '\nOMB Response for: ' + input + 
@@ -154,7 +158,11 @@ var executeText = function(){
         if(err){
             console.log(err) 
         }
+<<<<<<< HEAD
         child = exec(data, function (error, stdout, stderr) {
+=======
+        child = exec( `node liri.js spotify-this-song  ${data}`,function (error, stdout, stderr) {
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
          console.log(stdout);
          console.log(stderr);
          if (error !== null) {
@@ -166,11 +174,19 @@ var executeText = function(){
 
 //updateText function 
 var updateText = function(){
+<<<<<<< HEAD
     var dictate = fs.writeFile('random.txt', input , function(err){
         if(err){
             console.log('error has occured')
         }else{
             console.log('random.txt has been updated');
+=======
+    var dictate = fs.writeFile('random.txt', `"${input}"`, function(err){
+        if(err){
+            console.log('error has occured')
+        }else{
+            console.log('file has been updated');
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
         }
     });
 }
@@ -188,7 +204,13 @@ var logData = function(output){
 }
 
 
+<<<<<<< HEAD
 // command logic
+=======
+/////////////////////////////////////////////////////////
+
+
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
 if(command ==='spotify-this-song'){
     if(input){
          song();
@@ -208,3 +230,25 @@ else{
     console.log('Your Command is not Valid. Please Try Again');    
 }
 
+<<<<<<< HEAD
+=======
+
+//node liri.js concert-this rita ora
+//node liri.js concert-this 
+//node liri.js concert-this portish head 
+
+
+// node liri.js spotify-this-song la isla bonita
+//node liri.js spotify-this-song 
+
+
+// node liri.js movie-this the princess bride
+//node liri.js movie-this 
+
+
+//node liri.js updateText I Want it That Way
+//node liri.js do-what-it-says
+
+//node liri.js updateText Glory Box
+//node liri.js do-what-it-says
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47

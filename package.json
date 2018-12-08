@@ -22,6 +22,11 @@
     "dotenv": "^6.2.0",
     "file-system": "^2.2.2",
     "node-spotify-api": "^1.0.7",
+<<<<<<< HEAD
     "request": "^2.88.0"
+=======
+    "request": "^2.88.0",
+    "save": "^2.3.3"
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
   }
 }

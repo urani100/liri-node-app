@@ -1,5 +1,9 @@
 node_modules
 .DS_Store
+<<<<<<< HEAD
 .env
 Liri-markdownFile.txt
 Liri-Video-Submission.mov
+=======
+.env
+>>>>>>> 4144a3d4ff253c4ab4c6b55c7149c5c624f82b47
