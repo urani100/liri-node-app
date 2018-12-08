@@ -150,15 +150,11 @@ var movie = function(){
 
 //executeText function 
 var executeText = function(){
-// var command = 'spotify-this-song';
-// var command ='concert-this';
-var command = 'movie-this';
-
    fs.readFile('random.txt', 'utf8', function(err, data){
         if(err){
             console.log(err) 
         }
-        child = exec( `node liri.js ${command} ${data}`,function (error, stdout, stderr) {
+        child = exec(data, function (error, stdout, stderr) {
          console.log(stdout);
          console.log(stderr);
          if (error !== null) {
@@ -170,7 +166,7 @@ var command = 'movie-this';
 
 //updateText function 
 var updateText = function(){
-    var dictate = fs.writeFile('random.txt', `"${input}"`, function(err){
+    var dictate = fs.writeFile('random.txt', input , function(err){
         if(err){
             console.log('error has occured')
         }else{
