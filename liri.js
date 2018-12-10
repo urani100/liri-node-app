@@ -74,7 +74,7 @@ var concert = function(){
                     (
                     '\nRequest Made on: ' + timeStamp + '\n' + 
                     '\nBands in Town Response for: ' + input +
-                    '\nThe artist was not found'
+                    '\n'+ input + ' was not found'
                     )
             }else{
                 output=  
