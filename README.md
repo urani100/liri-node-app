@@ -23,12 +23,12 @@ This request will return the follwoing concert information:
 3. The Date
 
 <img src="assets/read-me-images/concert-this-1.png">
-concert-this rita ora
+
 
 The **LIRI** application will also inform you if it does not find the requested information regarding  an artist or band.
 
 <img src="assets/read-me-images/concert-this-2.png">
-concert-this artis/band not found
+
 
 
 ## Songs Request
@@ -37,18 +37,18 @@ The spotify-this-song  parameter, is used to render information about songs. In 
 
 This request will return the follwoing information about the desired song:
 
-1. The artis name
+1. The artist name
 2. The song's name 
 3. The song's Spotify link
 4. The album's name
 
 <img src="assets/read-me-images/spotify-this-song-1.png">
-*spotify-this-song la isla bonita*
+
 
 In case a parameter is not provided, the request defautls to the song "The Sign" by the Swedish pop group Ace of Base.
 
 <img src="assets/read-me-images/spotify-this-song-2.png">
-*spotify-this-song The Sign (default)*
+
 
 ## Movie Request
 
