@@ -1,89 +1,3 @@
-
-Sat Dec 08 2018 13:11:22 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: drake
-Location: Detroit, United States
-Venue: El Club
-Concert Date: 2018-12-29T20:00:00
-------------------------------
-Mon Dec 10 2018 11:07:14 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: London, United Kingdom
-Venue: The O2
-Concert Date: 2018-12-08T18:00:00
-------------------------------
-Mon Dec 10 2018 11:17:47 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 2019-03-01T20:30:00
-------------------------------
-03/01/2019
-Mon Dec 10 2018 11:18:53 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 11:21:58 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 11:22:20 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 11:22:48 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 11:23:00 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 12:06:07 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Mon Dec 10 2018 12:08:10 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
- Request Made onMon Dec 10 2018 12:09:59 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
-Request Made on: Mon Dec 10 2018 12:10:22 GMT-0500 (Eastern Standard Time)
-
-Bands in Town Response for: rita ora
-Location: St Kilda, Australia
-Venue: Palais Theatre
-Concert Date: 03/01/2019
-------------------------------
 Request Made on: Mon Dec 10 2018 12:15:27 GMT-0500 (Eastern Standard Time)
 
 Bands in Town Response for: rita ora
@@ -115,14 +29,7 @@ Song's name: La Isla Bonita
 Spotify Link:https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW
 Album: La Isla Bonita
 ------------------------------
-Mon Dec 10 2018 12:44:23 GMT-0500 (Eastern Standard Time)
 
-Default request: 
-Artist(s): Ace of Base
-Song's name: The Sign
-Spotify Link:https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
-Album: The Sign
-------------------------------
 Request Made on: Mon Dec 10 2018 12:53:38 GMT-0500 (Eastern Standard Time)
 
 Default request

@@ -23,10 +23,12 @@ This request will return the follwoing concert information:
 3. The Date
 
 <img src="assets/read-me-images/concert-this-1.png">
+concert-this rita ora
 
 The **LIRI** application will also inform you if it does not find the requested information regarding  an artist or band.
 
 <img src="assets/read-me-images/concert-this-2.png">
+concert-this artis/band not found
 
 
 ## Songs Request
@@ -41,10 +43,12 @@ This request will return the follwoing information about the desired song:
 4. The album's name
 
 <img src="assets/read-me-images/spotify-this-song-1.png">
+*spotify-this-song la isla bonita*
 
 In case a parameter is not provided, the request defautls to the song "The Sign" by the Swedish pop group Ace of Base.
 
 <img src="assets/read-me-images/spotify-this-song-2.png">
+*spotify-this-song The Sign (default)*
 
 ## Movie Request
 
@@ -62,10 +66,12 @@ This request will return the follwoing information about a movie:
 8. The Movie Plot
 
 <img src="assets/read-me-images/movie-this-1.png">
+*movie-this the matrix*
 
 In case a parameter is not provided, the request defautls to the movie "Mr. Nobody"
 
 <img src="assets/read-me-images/movie-this-2.png">
+*movie-this Mr. Nobody (default)*
 
 ## Running LIRI from a text File
 
@@ -74,8 +80,42 @@ The LIRI syntax node **`liri.js do-what-it-says`**, will execute any command ins
 The **random.txt** file may be updated using the updade function then using the **`node liri.js do-what-it-says`**  syntax will excecute the text within the file.
 
 <img src="assets/read-me-images/do-what-it-says-1.png">
+*do-what-it-says/spotify-this-song "I Want it That Way*
 
 <img src="assets/read-me-images/do-what-it-says-2.png">
+*do-what-it-says/spotify-this-song "glory box"*
 
 <img src="assets/read-me-images/do-what-it-says-3.png">
+*do-what-it-says/movie-this "mile 22"*
+
+## LIRI Log File
+
+The **LIRI** application provides the user with a log file, **data.txt**, which provides a list of her request. The file can be reviewed
+[HERE: ](https://github.com/urani100/liri-node-app/blob/master/data.txt)
+
+##Note on Running LIRI
+
+####NPM Packages
+1. User must install the following **npm** packages
+    *axios
+    *dotenv
+    *file-system
+    *moment
+    *n*ode-spotify-api
+    *request
+
+####NPM Spotify credentials
+2. User must provide their own **SPOTIFY ID**  and **SPOTIFY SECRET KEY**. This information must be inserted in a .env file in the format below:
+
+SPOTIFY_ID=your-spotify-id
+SPOTIFY_SECRET=your-spotify-secret
+
+
+
+
+
+
+
+
+
 
