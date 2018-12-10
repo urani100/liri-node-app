@@ -109,7 +109,7 @@ The following **npm** packages are necessary to the application:
 
 User must provide their own **SPOTIFY ID**  and **SPOTIFY SECRET KEY**. This information must be inserted in a .env file in the format below:
 
-SPOTIFY_ID=your-spotify-id
+SPOTIFY_ID=your-spotify-id --
 SPOTIFY_SECRET=your-spotify-secret
 
 
