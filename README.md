@@ -71,8 +71,11 @@ In case a parameter is not provided, the request defautls to the movie "Mr. Nobo
 
 The **LIRI** application also allows the user to execute it's commands from a text file. 
 The LIRI syntax node **`liri.js do-what-it-says`**, will execute any command inscribed within the **random.txt** file.
-The **random.txt** file may be updated using the updade function then using the **`node liri.js do-what-it-says`** will excecute the text within the file.
+The **random.txt** file may be updated using the updade function then using the **`node liri.js do-what-it-says`**  syntax will excecute the text within the file.
+
 <img src="assets/read-me-images/do-what-it-says-1.png">
+
 <img src="assets/read-me-images/do-what-it-says-2.png">
+
 <img src="assets/read-me-images/do-what-it-says-3.png">
 
