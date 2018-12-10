@@ -50,10 +50,10 @@ In case a parameter is not provided, the request defautls to the song "The Sign"
 
 The movie-this parameter is used to render information about movies. The following syntax must be used to excecute the request: node liri.js movie-this **`<movie name here>`**
 
-This request will return the follwoing information about the desired song:
+This request will return the follwoing information about a movie:
 
 1. The Title
-2. The Year: 1999
+2. The Year
 3. The IMDB Rating
 4. The Rotten Tomatoes Rating
 5. The Country
@@ -66,4 +66,13 @@ This request will return the follwoing information about the desired song:
 In case a parameter is not provided, the request defautls to the movie "Mr. Nobody"
 
 <img src="assets/read-me-images/movie-this-2.png">
+
+## Running LIRI from a text File
+
+The **LIRI** application also allows the user to execute it's commands from a text file. 
+The LIRI syntax node **`liri.js do-what-it-says`**, will execute any command inscribed within the **random.txt** file.
+The **random.txt** file may be updated using the updade function then using the **`node liri.js do-what-it-says`** will excecute the text within the file.
+<img src="assets/read-me-images/do-what-it-says-1.png">
+<img src="assets/read-me-images/do-what-it-says-2.png">
+<img src="assets/read-me-images/do-what-it-says-3.png">
 
