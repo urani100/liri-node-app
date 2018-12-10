@@ -22,7 +22,7 @@ This request will return the following concert information:
 2. The Venue 
 3. The Date
 
-<img src="assets/read-me-images/concert-this-1.png" width="200"/>
+<img src="assets/read-me-images/concert-this-1.png" width="600"/>
 
 The **LIRI** application will also inform you if it does not find the requested information regarding  an artist or band.
 
