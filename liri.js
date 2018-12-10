@@ -26,8 +26,8 @@ var defaultSong = function(){
     .request('https://api.spotify.com/v1/tracks/0hrBpAOgrt8RXigk83LLNE')
     .then(function(data) {
         output =
-           '\n' + timeStamp + '\n' + 
-            '\nDefault request: ' +
+           '\nRequest Made on: ' + timeStamp + '\n' + 
+            '\nDefault request' +
             "\nArtist(s): " +  data.artists[0].name +
             "\nSong's name: " + data.name+ 
             "\nSpotify Link:" + data.artists[0].external_urls.spotify +
@@ -119,7 +119,7 @@ var movie = function(){
     axios.get(link).then(
     function(response) {
             output=
-            '\n' + timeStamp + '\n' + 
+            '\nRequest Made on: ' + timeStamp + '\n' + 
             '\nOMB Response for: ' + input + 
             '\nTitle: ' + response.data.Title+ 
             '\nYear: ' + response.data.Year+
