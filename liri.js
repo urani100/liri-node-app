@@ -48,7 +48,7 @@ var song = function(){
       .search({ type: 'track', query: input })
       .then(function(response){
             output =
-            '\n' + timeStamp + '\n' + 
+            '\nRequest Made on: ' + timeStamp + '\n' + 
             '\nSpotify Response for: ' + input +
               "\nArtist(s): " + response.tracks.items[0].artists[0].name+
               "\nSong's name: " + response.tracks.items[1].name +

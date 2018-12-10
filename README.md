@@ -10,20 +10,43 @@ Marsha Leconte
  The Application makes use of four parameters dependent on which information the user desires.
 
 
-## How to run LIRI
+# How to run LIRI
 
+## Concerts 
 The concert-this parameter, which is used to receive information about concerts, must be executed 
 in the following syntax structure:  
 node liri.js concert-this **`<artist/band name here>`**
 
 This request will return the follwoing concert information:
 
-1. Location
-2. Venue 
-3. Date
+1. The Location
+2. The Venue 
+3. The Date
 
 <img src="assets/read-me-images/concert-this-1.png">
 
-The LIRI application will slso inform you if it does not find the requested information regarding  an artist 
+The **LIRI** application will also inform you if it does not find the requested information regarding  an artist or band.
 
 <img src="assets/read-me-images/concert-this-2.png">
+
+
+## Songs
+
+The spotify-this-song  parameter, is used to render information about a song. In oder to use this feature the following syntax must be used:  
+
+node liri.js spotify-this-song **'<song name here>'**
+
+This request will return the follwoing concert information:
+
+1. The artis name
+2. The song's name 
+3. The song's Spotify link
+4. The album's name
+
+<img src="assets/read-me-images/spotify-this-song-1.png">
+
+In case a parameter is not provided, the application render the inforamation for the dafautl song "The Sign" by the Swedish pop group Ace of Base.
+
+node liri.js spotify-this-song
+
+<img src="assets/read-me-images/spotify-this-song-2.png">

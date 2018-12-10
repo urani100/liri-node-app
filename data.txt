@@ -91,3 +91,35 @@ Location: St Kilda, Australia
 Venue: Palais Theatre
 Concert Date: 03/01/2019
 ------------------------------
+Mon Dec 10 2018 12:33:59 GMT-0500 (Eastern Standard Time)
+
+Spotify Response for: la isla bonita
+Artist(s): Madonna
+Song's name: La Isla Bonita
+Spotify Link:https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW
+Album: La Isla Bonita
+------------------------------
+Request Made on: Mon Dec 10 2018 12:34:59 GMT-0500 (Eastern Standard Time)
+
+Spotify Response for: la isla bonita
+Artist(s): Madonna
+Song's name: La Isla Bonita
+Spotify Link:https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW
+Album: La Isla Bonita
+------------------------------
+Request Made on: Mon Dec 10 2018 12:35:11 GMT-0500 (Eastern Standard Time)
+
+Spotify Response for: la isla bonita
+Artist(s): Madonna
+Song's name: La Isla Bonita
+Spotify Link:https://open.spotify.com/artist/6tbjWDEIzxoDsBA1FuhfPW
+Album: La Isla Bonita
+------------------------------
+Mon Dec 10 2018 12:44:23 GMT-0500 (Eastern Standard Time)
+
+Default request: 
+Artist(s): Ace of Base
+Song's name: The Sign
+Spotify Link:https://open.spotify.com/artist/5ksRONqssB7BR161NTtJAm
+Album: The Sign
+------------------------------
