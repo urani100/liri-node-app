@@ -10,16 +10,16 @@ Marsha Leconte
  The Application makes use of four parameters dependent on which information the user desires.
 
 
-##How to run LIRI
+## How to run LIRI
 
 The concert-this parameter, which is used to receive information about concerts, must be executed 
 in the following syntax structure:  
-node liri.js concert-this `<artist/band name here>`
+node liri.js concert-this **`<artist/band name here>`**
 
 This request will return the follwoing concert information:
 
-Location
-Venue 
-Concert Date
+1. Location
+2. Venue 
+3. Concert Date
 
 The LIRI application will slso inform you if it does not find the requested information regarding  an artist 
