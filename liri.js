@@ -19,6 +19,7 @@ var timeStamp = new Date();
 
 
 
+
 //default (The Sign)  spotify-this-song function
 var defaultSong = function(){
     spotify
@@ -72,7 +73,7 @@ var concert = function(){
                 console.log('The artist was not found')
             }else{
                 output=  
-                '\n' + timeStamp + '\n' + 
+                '\nRequest Made on: ' + timeStamp + '\n' + 
                 '\nBands in Town Response for: ' + input +
                 '\nLocation: ' + response.data[0].venue.city + ', ' + response.data[0].venue.country +
                 '\nVenue: ' + response.data[0].venue.name + 
