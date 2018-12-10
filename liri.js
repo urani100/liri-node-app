@@ -41,11 +41,9 @@ var defaultSong = function(){
   });
 }
 
-
-//spotify-this-song function
 var song = function(){
       spotify
-      .search({ type: 'track', query: input })
+      .search({ type: 'track', query: input, limit: 1})
       .then(function(response){
             output =
             '\nRequest Made on: ' + timeStamp + '\n' + 
@@ -60,7 +58,14 @@ var song = function(){
     
     })
     .catch(function(err) {
-        console.log(err);
+        // request was not found
+        output=
+            '\nRequest Made on: ' + timeStamp + '\n' + 
+            '\nSpotify Response for: ' + input +
+            '\n'+ input + ' was not found' + '\n------------------------------';
+        logData(output);
+        console.log(output);
+        
     });
 }
 
@@ -70,12 +75,13 @@ var concert = function(){
         axios.get(`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp`).then(
         function(response) {
             if(response.data[0] === undefined){
-                console.log
-                    (
+                // request was not found
+                output =
                     '\nRequest Made on: ' + timeStamp + '\n' + 
                     '\nBands in Town Response for: ' + input +
-                    '\n'+ input + ' was not found'
-                    )
+                    '\n'+ input + ' was not found'; 
+                logData(output);
+                console.log(output);
             }else{
                 output=  
                 '\nRequest Made on: ' + timeStamp + '\n' + 
@@ -111,13 +117,22 @@ var concert = function(){
 //movie-this function
 var movie = function(){ 
     if(input){
-        var link = `https://www.omdbapi.com/?t=${input}&y=&plot=short&apikey=trilogy`
+        var link = `https://www.omdbapi.com/?t=${input}&y=&plot=short&apikey=trilogy` // input is porvided
     }else{
-        link=`https://www.omdbapi.com/?t=Mr. Nobody&y=&plot=short&apikey=trilogy`
+        link=`https://www.omdbapi.com/?t=Mr. Nobody&y=&plot=short&apikey=trilogy` // input is not provided 'Mr. Nobody' is set as default
     }
-   
+
     axios.get(link).then(
     function(response) {
+        if(response.data.Error === "Movie not found!"){
+            // request was not found
+            output =
+                '\nRequest Made on: ' + timeStamp + '\n' + 
+                '\nOMB Response for: ' + input + '\n' + 
+                 response.data.Error + '\n------------------------------'; 
+            logData(output);
+            console.log(output);
+        }else{
             output=
             '\nRequest Made on: ' + timeStamp + '\n' + 
             '\nOMB Response for: ' + input + 
@@ -132,8 +147,9 @@ var movie = function(){
             
             logData(output);
             console.log(output);
+        }
     },
-
+    // server errors
     function(error) {
         if (error.response) {
         // The request was made and the server responded with a status code
@@ -194,13 +210,13 @@ var logData = function(output){
 }
 
 
-// command logic
+// command / input logic
 if(command ==='spotify-this-song'){
     if(input){
-         song();
+        song()
     }else{
         defaultSong();
-    } 
+    }
 }else if(command ==='concert-this'){
     concert();
 }else if(command ==='movie-this'){
