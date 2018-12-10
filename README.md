@@ -22,11 +22,11 @@ This request will return the following concert information:
 2. The Venue 
 3. The Date
 
-<img src="assets/read-me-images/concert-this-1.png" width="600"/>
+<img src="assets/read-me-images/concert-this-1.png" width="650"/>
 
 The **LIRI** application will also inform you if it does not find the requested information regarding  an artist or band.
 
-<img src="assets/read-me-images/concert-this-2.png">
+<img src="assets/read-me-images/concert-this-2.png" width="650"/>
 
 
 
@@ -41,12 +41,12 @@ This request will return the following information about the desired song:
 3. The song's Spotify link
 4. The album's name
 
-<img src="assets/read-me-images/spotify-this-song-1.png">
+<img src="assets/read-me-images/spotify-this-song-1.png" width="650"/>
 
 
 In case a parameter is not provided, the request defautls to the song "The Sign" by the Swedish pop group Ace of Base.
 
-<img src="assets/read-me-images/spotify-this-song-2.png">
+<img src="assets/read-me-images/spotify-this-song-2.png" width="650"/>
 
 
 ## Movie Request
@@ -64,12 +64,12 @@ This request will return the following information about a movie:
 7. The Actors
 8. The Movie Plot
 
-<img src="assets/read-me-images/movie-this-1.png">
+<img src="assets/read-me-images/movie-this-1.png" width="650"/>
 
 
 In case a parameter is not provided, the request defaults to the movie "Mr. Nobody"
 
-<img src="assets/read-me-images/movie-this-2.png">
+<img src="assets/read-me-images/movie-this-2.png" width="650"/>
 
 
 ## Running LIRI from a text File
@@ -78,13 +78,13 @@ The **LIRI** application also allows the user to execute it's commands from a te
 The LIRI syntax node **`liri.js do-what-it-says`**, will execute any command inscribed within the **random.txt** file.
 The **random.txt** file may be updated using the updade function then using the **`node liri.js do-what-it-says`**  syntax will excecute the text within the file.
 
-<img src="assets/read-me-images/do-what-it-says-1.png">
+<img src="assets/read-me-images/do-what-it-says-1.png" width="650"/>
 
 
-<img src="assets/read-me-images/do-what-it-says-2.png">
+<img src="assets/read-me-images/do-what-it-says-2.png" width="650"/>
 
 
-<img src="assets/read-me-images/do-what-it-says-3.png">
+<img src="assets/read-me-images/do-what-it-says-3.png" width="650"/>
 
 
 ## Log File
