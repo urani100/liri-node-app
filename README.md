@@ -16,7 +16,7 @@ Marsha Leconte
 The concert-this parameter, which is used to receive information about concerts, must be executed 
 in the following syntax structure: node liri.js concert-this **`<artist/band name here>`**
 
-This request will return the follwoing concert information:
+This request will return the following concert information:
 
 1. The Location
 2. The Venue 
@@ -35,7 +35,7 @@ The **LIRI** application will also inform you if it does not find the requested 
 
 The spotify-this-song  parameter, is used to render information about songs. In order to use this feature the following syntax must be used: node liri.js spotify-this-song **`<song name here>`**
 
-This request will return the follwoing information about the desired song:
+This request will return the following information about the desired song:
 
 1. The artist name
 2. The song's name 
@@ -52,9 +52,9 @@ In case a parameter is not provided, the request defautls to the song "The Sign"
 
 ## Movie Request
 
-The movie-this parameter is used to render information about movies. The following syntax must be used to excecute the request: node liri.js movie-this **`<movie name here>`**
+The movie-this parameter is used to render information about movies. The following syntax must be used to execute the request: node liri.js movie-this **`<movie name here>`**
 
-This request will return the follwoing information about a movie:
+This request will return the following information about a movie:
 
 1. The Title
 2. The Year
@@ -68,7 +68,7 @@ This request will return the follwoing information about a movie:
 <img src="assets/read-me-images/movie-this-1.png">
 
 
-In case a parameter is not provided, the request defautls to the movie "Mr. Nobody"
+In case a parameter is not provided, the request defaults to the movie "Mr. Nobody"
 
 <img src="assets/read-me-images/movie-this-2.png">
 
@@ -88,7 +88,7 @@ The **random.txt** file may be updated using the updade function then using the 
 <img src="assets/read-me-images/do-what-it-says-3.png">
 
 
-## LIRI Log File
+## Log File
 
 The **LIRI** application provides the user with a log file, **data.txt**, which provides a list of her request. The file can be reviewed [HERE](https://github.com/urani100/liri-node-app/blob/master/data.txt)
 
@@ -111,6 +111,7 @@ User must provide their own **SPOTIFY ID**  and **SPOTIFY SECRET KEY**. This inf
 
 SPOTIFY_ID=your-spotify-id
 SPOTIFY_SECRET=your-spotify-secret
+
 
 
 
