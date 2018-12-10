@@ -1,7 +1,7 @@
 # LIRI APLICACTION
 
 ## Author
-Marsha Leconte
+#### Marsha Leconte
 
 ## Application Overview
  The **LIRI** application is a Language Interpretation and Recognition Interface. The application leverages 
@@ -92,9 +92,9 @@ The **random.txt** file may be updated using the updade function then using the 
 
 The **LIRI** application provides the user with a log file, **data.txt**, which provides a list of her request. The file can be reviewed [HERE](https://github.com/urani100/liri-node-app/blob/master/data.txt)
 
-##Note on Running LIRI
+## Note on Running LIRI
 
-##NPM Packages
+#### NPM Packages
 
 The following **npm** packages are necessary to the application:
 
@@ -105,7 +105,7 @@ The following **npm** packages are necessary to the application:
     5.node-spotify-api
     6.request
 
-##Spotify Credentials
+#### Spotify Credentials
 
 User must provide their own **SPOTIFY ID**  and **SPOTIFY SECRET KEY**. This information must be inserted in a .env file in the format below:
 
