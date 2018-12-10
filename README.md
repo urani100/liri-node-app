@@ -32,11 +32,11 @@ The **LIRI** application will also inform you if it does not find the requested 
 
 ## Songs
 
-The spotify-this-song  parameter, is used to render information about a song. In oder to use this feature the following syntax must be used:  
+The spotify-this-song  parameter, is used to render information about songs. In oder to use this feature the following syntax must be used:  
 
-node liri.js spotify-this-song **'<song name here>'**
+node liri.js spotify-this-song **`<song name here>`**
 
-This request will return the follwoing concert information:
+This request will return the follwoing information about the desired song:
 
 1. The artis name
 2. The song's name 
