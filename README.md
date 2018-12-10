@@ -32,9 +32,7 @@ The **LIRI** application will also inform you if it does not find the requested 
 
 ## Songs
 
-The spotify-this-song  parameter, is used to render information about songs. In oder to use this feature the following syntax must be used:  
-
-node liri.js spotify-this-song **`<song name here>`**
+The spotify-this-song  parameter, is used to render information about songs. In oder to use this feature the following syntax must be used: node liri.js spotify-this-song **`<song name here>`**
 
 This request will return the follwoing information about the desired song:
 
@@ -45,8 +43,6 @@ This request will return the follwoing information about the desired song:
 
 <img src="assets/read-me-images/spotify-this-song-1.png">
 
-In case a parameter is not provided, the application render the inforamation for the dafautl song "The Sign" by the Swedish pop group Ace of Base.
-
-node liri.js spotify-this-song
+In case a parameter is not provided, the request defautls to the song "The Sign" by the Swedish pop group Ace of Base.
 
 <img src="assets/read-me-images/spotify-this-song-2.png">
