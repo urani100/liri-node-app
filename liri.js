@@ -5,6 +5,7 @@ var axios = require("axios");
 var Spotify = require('node-spotify-api');
 var fs = require('fs');
 var request = require('request');
+var moment = require('moment');
 var exec = require('child_process').exec, child;
 var keys = require('./keys.js');
 
@@ -75,8 +76,7 @@ var concert = function(){
                 '\nBands in Town Response for: ' + input +
                 '\nLocation: ' + response.data[0].venue.city + ', ' + response.data[0].venue.country +
                 '\nVenue: ' + response.data[0].venue.name + 
-                '\nConcert Date: ' +response.data[0].datetime + '\n------------------------------';
-                
+                '\nConcert Date: ' + moment(response.data[0].datetime).format('MM/DD/YYYY')+ '\n------------------------------'
             logData(output);
             console.log(output);
             }  
