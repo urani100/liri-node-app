@@ -20,6 +20,10 @@ This request will return the follwoing concert information:
 
 1. Location
 2. Venue 
-3. Concert Date
+3. Date
+
+<img src="assets/read-me-images/concert-this-1.png">
 
 The LIRI application will slso inform you if it does not find the requested information regarding  an artist 
+
+<img src="assets/read-me-images/concert-this-2.png">

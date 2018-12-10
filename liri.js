@@ -70,7 +70,12 @@ var concert = function(){
         axios.get(`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp`).then(
         function(response) {
             if(response.data[0] === undefined){
-                console.log('The artist was not found')
+                console.log
+                    (
+                    '\nRequest Made on: ' + timeStamp + '\n' + 
+                    '\nBands in Town Response for: ' + input +
+                    '\nThe artist was not found'
+                    )
             }else{
                 output=  
                 '\nRequest Made on: ' + timeStamp + '\n' + 
